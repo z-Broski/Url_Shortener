@@ -1,0 +1,37 @@
+-- Filling urls for testing purposes only
+INSERT INTO urls(short_url, long_url) VALUES('serwsdfat687', 'www.twitter.com');
+
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-01', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-02', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-03', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-04', 100);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-05', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-06', 55);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-07', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-08', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-09', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-10', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-11', 5);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-12', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-13', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-14', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-15', 77);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-16', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-17', 2342332);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-18', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-03-19', 22);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-04-01', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-05-01', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-06-01', 66);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-07-01', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-08-01', 23434);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-09-01', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-10-01', 44);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2022-10-11', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2020-11-01', 77777777);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2021-03-21', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2024-01-11', 322);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2023-07-05', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2025-12-01', 55);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2021-02-17', 3);
+INSERT INTO url_stats(short_url, event_date, click_count) VALUES('serwsdfat687','2120-04-01', 3);

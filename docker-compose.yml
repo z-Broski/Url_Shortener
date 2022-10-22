@@ -1,0 +1,50 @@
+version: "3"
+services:
+  react-frontend:
+    build: ./frontend
+    stdin_open: true
+    ports: 
+      - "3000:3000"
+    networks:
+      - url-shortener-app
+    volumes:
+      - ./frontend/:/usr/src/app
+      - /usr/src/app/node_modules
+  nodejs-backend:
+    build: ./backend
+    ports:
+      - "3001:3001"
+    networks:
+      - url-shortener-app
+    volumes:
+      - ./backend/:/usr/src/app
+      - /usr/src/app/node_modules
+    depends_on:
+      postgres:
+        condition: service_healthy
+  postgres:
+    image: postgres:14.1-alpine
+    restart: always
+    networks:
+      - url-shortener-app
+    healthcheck: # healthcheck is needed for initializing nodejs after postgres. otherwise nodejs couldn't connect to postgres on first initialization.
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    environment:
+      - POSTGRES_DB=db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    volumes: 
+      - ./postgres-data:/var/lib/postgresql/data
+      - ./backend/sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+      #- ./backend/sql/fill_tables.sql:/docker-entrypoint-initdb.d/fill_tables.sql #for testing
+networks:
+  url-shortener-app:
+    driver: bridge
+volumes:
+  postgres-data:
+    driver: local
